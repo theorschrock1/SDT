@@ -1,0 +1,23 @@
+Package: SDT
+Type: Package
+Title: Functional data tables
+Version: 0.0.0.9000
+Author: Theo Schrock
+Maintainer: <theorschrock@gmail.com>
+Description: Functional data tables ulits for sDataTable.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    sUtils,
+    glue,
+    stringr,
+    checkmate,
+    rlang,
+    data.table,
+    exprTools,
+    zeallot,
+    R6,
+    units,
+    AOunits,
+    lubridate
