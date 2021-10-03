@@ -5,12 +5,12 @@ library(sDevTools)
 
 # Package metadata
 
-fill_description(pkg_name = "SDT", pkg_title = "PKG_TITLE", pkg_description = "The package description.", 
+fill_description(pkg_name = "SDT", pkg_title = "Functional data tables", pkg_description = "Functional data tables ulits for sDataTable.",
     author_first_name = "Theo", author_last_name = "Schrock", author_email = "<theorschrock@gmail.com>")
 
 # Package dependencies (IMPORTS)
 
-imports <- c("sUtils", "glue", "stringr", "checkmate", "rlang")
+imports <- c("sUtils", "glue", "stringr", "checkmate", "rlang",'data.table','exprTools','zeallot','R6','units','AOunits','lubridate')
 sDevTools::import_pkg(imports)
 
 # Use Git and create a Github repo

@@ -1,0 +1,83 @@
+
+SUM<-function(x,na.rm=TRUE,...){
+  sum(x,na.rm=na.rm)
+}
+IF_ELSE<-function(condition, true, false, missing = NULL){
+
+  fifelse(test = condition, yes = true, no = true, na = missing)
+
+}
+N<-function(x){
+length(x)
+}
+NTH<-function(x,n=1L,...){
+  data.table::first(x,n=n,...)
+}
+FIRST<-function(x){
+  data.table::first(x)
+}
+LAST<-function(x){
+  data.table::last(x)
+}
+IQR<-function(x,na.rm=TRUE,...){
+ iqr(x,na.rm=na.rm,...)
+}
+MAD<-function(x,na.rm=TRUE,...){
+  mad(x,na.rm=na.rm,...)
+}
+AVG<-function(x,na.rm=TRUE,...){
+  mean(x,na.rm=na.rm,...)
+}
+MEAN<-function(x,na.rm=TRUE,...){
+  mean(x,na.rm=na.rm,...)
+
+}
+MEDIAN<-function(x,na.rm=TRUE,...){
+  median(x,na.rm=na.rm,...)
+}
+MAX<-function(x,na.rm=TRUE,...){
+  max(x,na.rm=na.rm,...)
+}
+MIN<-function(x,na.rm=TRUE,...){
+  min(x,na.rm=na.rm,...)
+}
+SD<-function(x,na.rm=TRUE,...){
+  sd(x,na.rm=na.rm,...)
+}
+VAR<-function(x,na.rm=TRUE,...){
+  var(x,na.rm=na.rm,...)
+}
+COR<-function(x,...){
+  cor(x,...)
+}
+YEAR<-function(x){
+  data.table::year(x)
+}
+QUARTER<-function(x){
+  data.table::quarter(x)
+}
+MONTH<-function(x){
+  data.table::month(x)
+}
+DAY<-function(x){
+  factor(day(x))
+}
+HOUR<-function(x){
+  out<-factor(hour(x))
+}
+MINUTE<-function(x,...){
+  factor(minute(x,...))
+  }
+SECOND<-function(x,...){
+  factor(round(second(x,...)))
+}
+DOW<-function(x){
+  factor(data.table::wday(x),labels="Mon",'Tue',"Wed","Thr",'Fri',"Sat",'Sun')
+}
+WEEK<-function(x,...){
+  factor(data.table::week(x,...))
+}
+YDAY<-function(x,...){
+  factor(data.table::yday(x,...))
+}
+
