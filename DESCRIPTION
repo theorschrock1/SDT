@@ -1,7 +1,7 @@
 Package: SDT
 Type: Package
 Title: Functional data tables
-Version: 0.0.0.9002
+Version: 0.0.0.9003
 Author: Theo Schrock
 Maintainer: <theorschrock@gmail.com>
 Description: Functional data tables ulits for sDataTable.
@@ -17,7 +17,10 @@ Imports:
     zeallot,
     R6,
     units,
-    lubridate
+    lubridate,
+    exprTools,
+    sUtils,
+    AOunits
 Remotes:
     theorschrock1/exprTools,
     theorschrock1/sUtils,
